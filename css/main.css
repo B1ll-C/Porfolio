@@ -1,0 +1,31 @@
+body {
+   height: 100%;
+   overflow-y: hidden;
+}
+
+.nav_gradient {
+	background: linear-gradient(90deg, #0D1117 0%, #475C7D 42%);
+}
+.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory; /* Enables vertical mandatory scroll snapping */
+  overflow-y: scroll; /* Enables vertical scrolling */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Scroll snap alignment for each child element */
+.mandatory-scroll-snapping > div {
+  scroll-snap-align: start; /* Each section will snap to the top of the container */
+  height: 100vh; /* Full viewport height for each section */
+}
+
+/* Optional styles for demo */
+.mandatory-scroll-snapping > div:nth-child(odd) {
+  background-color: #000;
+  color: #FFF;
+}
+
+.mandatory-scroll-snapping > div:nth-child(even) {
+  background-color: #fff;
+  color: #000;
+}
+
