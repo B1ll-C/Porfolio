@@ -13,7 +13,7 @@
 </head>
 <body class="">
 
-	<nav class="bg-white border-gray-200 nav_gradient w-full ">
+	<nav class="bg-white border-gray-200 nav_gradient w-full" style="z-index: 0;">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 <!--     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
@@ -51,303 +51,270 @@
 
 
 <main class="y mandatory-scroll-snapping">
-	<div class="flex items-center justify-center space-x-32">
-	<!-- Text Section -->
-		<div>
-			<div>
-				<h1 class="text-3xl font-semibold">Hi, I'm Paul—a programmer</h1>
-				<h1 class="text-3xl font-semibold">Passionate about creating</h1>
-				<h1 class="text-3xl font-semibold">efficient, impactful solutions</h1>
-				<h1 class="text-3xl font-semibold">that bring ideas to life</h1>
-			</div>
-		</div>
+<section id="#home" class="flex flex-col lg:flex-row items-center justify-center lg:space-x-16 space-y-6 lg:space-y-0 min-h-screen">
+    <!-- Text Section -->
+    <div class="text-center lg:text-left space-y-2">
+        <h1 class="text-2xl lg:text-3xl font-semibold">Hi, I'm Paul—a programmer</h1>
+        <h1 class="text-2xl lg:text-3xl font-semibold">Passionate about creating</h1>
+        <h1 class="text-2xl lg:text-3xl font-semibold">efficient, impactful solutions</h1>
+        <h1 class="text-2xl lg:text-3xl font-semibold">that bring ideas to life</h1>
+    </div>
 
-		<!-- Image Section -->
-		<div>
-			<img src="images/self.png" class="w=3/4 rounded-lg">
-		</div>
-	</div>
-
-
-	<div class="flex justify-between">
-	  <!-- Left Section: Skills -->
-	  <div class="w-1/2 pr-8">
-	  	<div class="ml-20">
-		  	<div class="mt-20 mb-24">
-		    	<h2 class="text-6xl font-bold">Skills &</h2>
-		    	<h2 class="text-6xl font-bold">Experience</h2>
-		  	</div>
-		  	<div class="w-1/2">
-		  		<h2 class="text-2xl font-semibold">Skills</h2>
-		  		<div class="grid grid-cols-4 gap-y-10 mt-10">
-				  <img src="images/icons/html.png">
-				  <img src="images/icons/css.png">
-				  <img src="images/icons/js.png">
-				  <img src="images/icons/php.png">
-				  <img src="images/icons/java.png">
-				  <img src="images/icons/c++++.png">
-				  <img src="images/icons/python.png">
-				  <img src="images/icons/node.png">
-				  <img src="images/icons/mysql.png">
-				  <img src="images/icons/firebase.png">
-				  <img src="images/icons/android.png">
-				</div>
-
-
-		  	</div>
-	  	</div>
-	    <!-- Add skill content here -->
-	  </div>
-
-	  <!-- Right Section: Experience -->
-	  <div class="w-1/2 pl-8 mr-24">
-	  	<div class="mt-32">
-	    	<h2 class="text-2xl font-semibold mb-10">Experience</h2>
-
-	  		<div class="flex items-center justify-between border-t-4 border-gray-900 mb-10">
-	  			<div class="w-1/4">
-	  				<h5 class="font-semibold text-center">2025 - Present<h5>
-	  			</div>
-	  			<div class="w-3/4 text-center ">
-	  				<h2 class="text-4xl font-bold">Intern</h2>
-	  				<h2 class="text-2xl font-semibold">Company Name</h2>
-
-	  			</div>
-	  		</div>
-
-	  		<div class="flex items-center justify-between border-t-4 border-gray-900 mb-10">
-	  			<div class="w-1/4">
-	  				<h5 class="font-semibold text-center">2025 - Present<h5>
-	  			</div>
-	  			<div class="w-3/4 text-center ">
-	  				<h2 class="text-4xl font-bold">Intern</h2>
-	  				<h2 class="text-2xl font-semibold">Company Name</h2>
-
-	  			</div>
-	  		</div>
-
-	  		<div class="flex items-center justify-between border-t-4 border-gray-900 mb-10">
-	  			<div class="w-1/4">
-	  				<h5 class="font-semibold text-center">2025 - Present<h5>
-	  			</div>
-	  			<div class="w-3/4 text-center ">
-	  				<h2 class="text-4xl font-bold">Intern</h2>
-	  				<h2 class="text-2xl font-semibold">Company Name</h2>
-
-	  			</div>
-	  		</div>
+    <!-- Image Section -->
+    <div class="flex justify-center lg:justify-start w-full lg:w-auto">
+        <img src="images/self.png" class="w-3/4 lg:w-full max-w-xs lg:max-w-sm rounded-lg">
+    </div>
+</section>
 
 
 
+<section class="flex flex-col lg:flex-row justify-between overflow-y-scroll">
+  <!-- Left Section: Skills -->
+  <div class="w-full lg:w-1/2 lg:pr-8 px-4 lg:px-0">
+    <div class="ml-0 lg:ml-20">
+      <div class="mt-10 lg:mt-20 mb-10 lg:mb-24">
+        <h2 class="text-4xl lg:text-6xl font-bold">Skills &</h2>
+        <h2 class="text-4xl lg:text-6xl font-bold">Experience</h2>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <h2 class="text-xl lg:text-2xl font-semibold">Skills</h2>
+        <div class="grid grid-cols-4 gap-y-6 lg:gap-y-10 mt-6 lg:mt-10">
+          <img src="images/icons/html.png" alt="HTML">
+          <img src="images/icons/css.png" alt="CSS">
+          <img src="images/icons/js.png" alt="JavaScript">
+          <img src="images/icons/php.png" alt="PHP">
+          <img src="images/icons/java.png" alt="Java">
+          <img src="images/icons/c++++.png" alt="C++">
+          <img src="images/icons/python.png" alt="Python">
+          <img src="images/icons/node.png" alt="Node.js">
+          <img src="images/icons/mysql.png" alt="MySQL">
+          <img src="images/icons/firebase.png" alt="Firebase">
+          <img src="images/icons/android.png" alt="Android">
+        </div>
+      </div>
+    </div>
+  </div>
 
-	  	</div>
-	    <!-- Add experience content here -->
-	  </div>
-	</div>
+  <!-- Right Section: Experience -->
+  <div class="w-full lg:w-1/2 lg:pl-8 px-4 lg:px-0 lg:mr-24">
+    <div class="mt-10 lg:mt-32">
+      <h2 class="text-xl lg:text-2xl font-semibold mb-6 lg:mb-10">Experience</h2>
+
+      <!-- Experience Items -->
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col lg:flex-row items-center justify-between border-t-4 border-gray-900 pt-4">
+          <div class="w-full lg:w-1/4 text-center">
+            <h5 class="font-semibold">2025 - Present</h5>
+          </div>
+          <div class="w-full lg:w-3/4 text-center mt-4 lg:mt-0">
+            <h2 class="text-2xl lg:text-4xl font-bold">Intern</h2>
+            <h2 class="text-lg lg:text-2xl font-semibold">Company Name</h2>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center justify-between border-t-4 border-gray-900 pt-4">
+          <div class="w-full lg:w-1/4 text-center">
+            <h5 class="font-semibold">2024 - 2025</h5>
+          </div>
+          <div class="w-full lg:w-3/4 text-center mt-4 lg:mt-0">
+            <h2 class="text-2xl lg:text-4xl font-bold">Junior Developer</h2>
+            <h2 class="text-lg lg:text-2xl font-semibold">Company Name</h2>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center justify-between border-t-4 border-gray-900 pt-4">
+          <div class="w-full lg:w-1/4 text-center">
+            <h5 class="font-semibold">2023 - 2024</h5>
+          </div>
+          <div class="w-full lg:w-3/4 text-center mt-4 lg:mt-0">
+            <h2 class="text-2xl lg:text-4xl font-bold">Assistant</h2>
+            <h2 class="text-lg lg:text-2xl font-semibold">Company Name</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 	<!-- Projects -->
-	<div class="flex justify-center py-20">
-	  <div class="w-full max-w-4xl px-4">
-	    <!-- Title Section -->
-	    <h1 class="text-5xl font-bold text-center mb-10">Projects</h1>
-	    
-	    <!-- Grid Section: Project Boxes -->
-	    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<section class="flex justify-center py-20 overflow-y-scroll">
+  <div class="w-full max-w-4xl px-4">
+    <!-- Title Section -->
+    <h1 class="text-4xl sm:text-5xl font-bold text-center mb-10">Projects</h1>
+    
+    <!-- Scrollable Grid Section: Project Boxes -->
+    <div class="overflow-auto h-3/4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 min-w-[320px] sm:min-w-0 justify-items-center">
+        <!-- Your content here -->
+       
 
-			<div class="card">
-			  <div class="content">
-			    <div class="back">
-			      <div class="back-content">
-			        <strong>MC Studio</strong>
-			      </div>
-			    </div>
-			    <div class="front">
-			      
-			      <div class="img">
-			        <div class="circle">
-			        </div>
-			        <div class="circle" id="right">
-			        </div>
-			        <div class="circle" id="bottom">
-			        </div>
-			      </div>
+  <div class="card min-w-[280px] max-w-full">
+          <div class="content">
+            <div class="back">
+              <div class="back-content">
+                <strong>MC Studio</strong>
+              </div>
+            </div>
+            <div class="front">
+              <div class="img">
+                <div class="circle"></div>
+                <div class="circle" id="right"></div>
+                <div class="circle" id="bottom"></div>
+              </div>
+              <div class="front-content">
+                <small class="badge">Description</small>
+                <p class="badge">MC STUDIO's promotional website showcases photography services, providing clients with detailed information on packages, services, and booking options.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			      <div class="front-content">
-			        <small class="badge">Description</small>
-			        <p class="badge">MC STUDIO's promotional website showcases photography services, providing clients with detailed information on packages, services, and booking options.</p>
-			     
-			      </div>
-			    </div>
-			  </div>
-			</div>
 
-			<div class="card">
-			  <div class="content">
-			    <div class="back">
-			      <div class="back-content">
-			        <strong>GROOT (Mobile)</strong>
-			      </div>
-			    </div>
-			    <div class="front">
-			      
-			      <div class="img">
-			        <div class="circle">
-			        </div>
-			        <div class="circle" id="right">
-			        </div>
-			        <div class="circle" id="bottom">
-			        </div>
-			      </div>
+         <!-- Project 2 -->
+        <div class="card min-w-[280px] max-w-full">
+          <div class="content">
+            <div class="back">
+              <div class="back-content">
+                <strong>GROOT (Mobile)</strong>
+              </div>
+            </div>
+            <div class="front">
+              <div class="img">
+                <div class="circle"></div>
+                <div class="circle" id="right"></div>
+                <div class="circle" id="bottom"></div>
+              </div>
+              <div class="front-content">
+                <small class="badge">Description</small>
+                <p class="badge">GROOT is a mobile app for identifying indigenous trees, identifying pests and diseases, and monitoring their health. It provides insights and effective tree preservation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			      <div class="front-content">
-			        <small class="badge">Description</small>
-			        <p class="badge">GROOT is a mobile app for identifying indigenous trees, identifying pests and diseases, and monitoring their health. It provides insights and effective tree preservation.</p>
-			     
-			      </div>
-			    </div>
-			  </div>
-			</div>
+        <!-- Project 3 -->
+        <div class="card min-w-[280px] max-w-full">
+          <div class="content">
+            <div class="back">
+              <div class="back-content">
+                <strong>GROOT (WEB)</strong>
+              </div>
+            </div>
+            <div class="front">
+              <div class="img">
+                <div class="circle"></div>
+                <div class="circle" id="right"></div>
+                <div class="circle" id="bottom"></div>
+              </div>
+              <div class="front-content">
+                <small class="badge">Description</small>
+                <p class="badge">GROOT WEBSITE is a tree health monitoring platform that integrates GROOT mobile application data, offering a centralized dashboard for analyzing tree health, pest detection, and improved tree care management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			<div class="card">
-			  <div class="content">
-			    <div class="back">
-			      <div class="back-content">
-			        <strong>GROOT (WEB)</strong>
-			      </div>
-			    </div>
-			    <div class="front">
-			      
-			      <div class="img">
-			        <div class="circle">
-			        </div>
-			        <div class="circle" id="right">
-			        </div>
-			        <div class="circle" id="bottom">
-			        </div>
-			      </div>
 
-			      <div class="front-content">
-			        <small class="badge">Description</small>
-			        <p class="badge">GROOT WEBSITE is a tree health monitoring platform that integrates GROOT mobile application data, offering a centralized dashboard for analyzing tree health, pest detection, and improved tree care management.</p>
-			     
-			      </div>
-			    </div>
-			  </div>
-			</div>
-	  
-	    </div>
-	  </div>
-	</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 
 	<!-- Contact  -->
-	<div class="flex justify-between">
-	  <!-- Left Section: Skills -->
-	  <div class="w-1/2 pr-8">
-	  	<div class="ml-20">
-		  	<div class="mt-20 mb-24">
-		    	<h2 class="text-6xl font-bold">Let's Discuss</h2>
-		    	<h2 class="text-6xl font-bold">Your Project</h2>
-		  	</div>
+<section class="flex flex-col lg:flex-row items-center justify-center lg:space-x-16 space-y-6 lg:space-y-0 min-h-screen">
+    <!-- Text Section -->
+   <div class="w-full sm:w-1/2 sm:pr-8 mb-8 sm:mb-0">
+    <div class="ml-4 sm:ml-20">
+      <div class="mt-12 sm:mt-20 mb-24">
+        <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Let's Discuss</h2>
+        <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Your Project</h2>
+      </div>
 
+      <div class="w-full sm:w-3/4 mx-auto">
+        <!-- Email Section -->
+        <div class="flex items-center justify-between border-t-4 border-gray-900 mb-10 pt-4">
+          <div class="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center">
+            <img src="images/icons/mail.svg" class="w-6 h-6" alt="Mail Icon">
+          </div>
+          <div class="w-3/4">
+            <h2 class="text-l text-gray-500">Email</h2>
+            <h2 class="text-xl sm:text-2xl font-semibold">ict1gonzalodo.cdlb@gmail.com</h2>
+          </div>
+        </div>
 
-		  	<div class="w-3/4">
-		  		<div class="flex items-center justify-between border-t-4 border-gray-900 mb-10">
-		  			<div class="w-1/4">
-		  				<!-- <h5 class="font-semibold text-center"><h5> -->
-	  					<div class="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center">
-						  <img src="images/icons/mail.svg" class="w-6 h-6" alt="Mail Icon">
-						</div>
-		  			</div>
-		  			<div class="w-3/4">
-		  				<h2 class="text-l text-gray-500">email</h2>
-		  				<h2 class="text-2xl font-semibold">ict1gonzalodo.cdlb@gmail.com</h2>
-		  			</div>
-		  		</div>
+        <!-- Phone Section -->
+        <div class="flex items-center justify-between border-t-4 border-gray-900 mb-10 pt-4">
+          <div class="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center">
+            <img src="images/icons/cell.svg" class="w-6 h-6" alt="Cell Icon">
+          </div>
+          <div class="w-3/4">
+            <h2 class="text-l text-gray-500">Cellphone Number</h2>
+            <h2 class="text-xl sm:text-2xl font-semibold">+63 9** *** ****</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-		  		<div class="flex items-center justify-between border-t-4 border-gray-900 mb-10">
-		  			<div class="w-1/4">
-		  				<!-- <h5 class="font-semibold text-center"><h5> -->
-	  					<div class="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center">
-						  <img src="images/icons/cell.svg" class="w-6 h-6" alt="Mail Icon">
-						</div>
-		  			</div>
-		  			<div class="w-3/4">
-		  				<h2 class="text-l text-gray-500">Cellphone Number</h2>
-		  				<h2 class="text-2xl font-semibold">+63 9** *** ****</h2>
-		  			</div>
-		  		</div>
+    <!-- Image Section -->
+    <div class="flex justify-center lg:justify-start w-full lg:w-auto">
+        <img src="images/self.png" class="w-3/4 lg:w-full max-w-xs lg:max-w-sm rounded-lg">
+    </div>
+</section>
 
-		  
-
-		  	</div>
-	  	</div>
-	    <!-- Add skill content here -->
-	  </div>
-
-	  <!-- Right Section: Experience -->
-	  <div class="w-1/2 pl-8 mr-24">
-	  	<div class="mt-32 flex items-center justify-center">
-	    	<img src="images/self2.png">
-
-
-	  	</div>
-	    <!-- Add experience content here -->
-	  </div>
-	</div>
 
 	<!-- Achievements -->
-	<div class="flex justify-between">
-	  <!-- Left Section: Skills -->
-	  <div class="w-1/2 pr-8">
-	  	<div class="ml-20">
-		  	<div class="mt-20 mb-24">
-		    	<h2 class="text-6xl font-bold">Badges &</h2>
-		    	<h2 class="text-6xl font-bold">Certificates</h2>
-		  	</div>
-		  	<div class="w-1/2">
-		  		<h2 class="text-2xl font-semibold">Badges</h2>
-		  		<div class="grid grid-cols-4 gap-y-10 mt-10">
-				  <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="702e8572-85db-4f4b-9e56-9d2af95ed375" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-				</div>
+	<section class="flex flex-col sm:flex-row justify-between py-8 overflow-y-scroll">
+  <!-- Left Section: Badges -->
+  <div class="w-full sm:w-1/2 sm:pr-8 mb-8 sm:mb-0">
+    <div class="ml-4 sm:ml-20">
+      <div class="mt-12 sm:mt-20 mb-24">
+        <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Badges &</h2>
+        <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Certificates</h2>
+      </div>
 
-		  	</div>
-	  	</div>
-	    <!-- Add skill content here -->
-	  </div>
+      <div class="w-full sm:w-1/2 mx-auto">
+        <h2 class="text-2xl font-semibold">Badges</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 mt-10">
+          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="702e8572-85db-4f4b-9e56-9d2af95ed375" data-share-badge-host="https://www.credly.com"></div>
+          <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	  <!-- Right Section: Experience -->
-	  <div class="w-1/2 pl-8 mr-24">
-	  	<div class="mt-32">
-	    	<h2 class="text-2xl font-semibold mb-10">Certificate</h2>
+  <!-- Right Section: Certificate -->
+  <div class="w-full sm:w-1/2 sm:pl-8 sm:mr-24 mb-8 sm:mb-0">
+    <div class="mt-12 sm:mt-32">
+      <h2 class="text-2xl font-semibold mb-10">Certificate</h2>
 
-	  		<div class="flex items-center justify-between border-t-4 border-white mb-10">
-	  			<div class="w-1/4">
-	  				<h5 class="font-semibold text-center"> August 27, 2024<h5>
-	  			</div>
-	  			<div class="w-2/4 text-center ">
-	  				<h2 class="text-2xl font-bold">Cisco Networking Academy</h2>
-	  				<h2 class="text-xl font-semibold">Introduction to Cybersecurity</h2>
+      <div class="flex flex-col sm:flex-row items-center justify-between border-t-4 border-white mb-10 pt-4">
+        <div class="w-full sm:w-1/4 text-center sm:text-left">
+          <h5 class="font-semibold">August 27, 2024</h5>
+        </div>
+        <div class="w-full sm:w-2/4 text-center sm:text-left">
+          <h2 class="text-2xl sm:text-3xl font-bold">Cisco Networking Academy</h2>
+          <h2 class="text-xl sm:text-2xl font-semibold">Introduction to Cybersecurity</h2>
+        </div>
+        <div class="w-full sm:w-1/4 flex items-center justify-center mt-4 sm:mt-0">
+          <button class="w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" style="background: #FBBF24;">
+            <i class="fas fa-arrow-alt-circle-right text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	  			</div>
-	  			<div class="w-1/4 flex items-center justify-center ">
-	  				<!-- <button>Link</button> -->
-	  				<button class="w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" style="background: #FBBF24;">
-					  <i class="fas fa-arrow-alt-circle-right text-2xl"></i>
-					</button>
-
-	  			</div>
-	  		</div>
-
-
-
-
-	  	</div>
-	    <!-- Add experience content here -->
-	  </div>
-	</div>
 
 </main>
+
+
+
 
 </body>
 </html>
