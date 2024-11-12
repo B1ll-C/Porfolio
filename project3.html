@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/carousel.css">
+</head>
+<body>
+
+
+<div class="carousel">
+    <ul class="slides">
+      <input type="radio" name="radio-buttons" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide-image bg-green-600 text-white py-12 px-8 rounded-lg shadow-lg relative overflow-hidden">
+          <!-- Background image for a natural/forest theme -->
+          <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://www.example.com/forest-image.jpg');"></div>
+
+          <div class="relative z-10 flex flex-col items-center justify-center text-center">
+            <!-- Title -->
+            <h2 class="text-4xl font-bold text-white mb-4 drop-shadow-lg">
+              Groot Web
+            </h2>
+
+            <!-- Description -->
+            <p class="text-lg text-white max-w-4xl mx-auto leading-relaxed mb-8">
+              GROOT WEBSITE is a powerful, all-in-one platform designed for the ongoing monitoring, analysis, and management of tree health. By integrating data collected from the GROOT mobile application, this platform offers users a centralized, easy-to-navigate dashboard where they can assess various health metrics, detect pests and diseases, and gain critical insights into the factors impacting tree vitality. Users can track real-time health updates, visualize trends over time, and access recommendations for proactive care. With GROOT WEBSITE, forestry professionals, environmentalists, and conservationists are empowered to enhance tree preservation efforts, promote ecosystem health, and make informed decisions for sustainable management and care.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <label for="img-3" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-2" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-2" />
+      <li class="slide-container">
+        <div class="slide-image bg-gray-400">
+          <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+          
+        </div>
+        <div class="carousel-controls">
+          <label for="img-1" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-3" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-3" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+
+        </div>
+        <div class="carousel-controls">
+          <label for="img-2" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-1" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <div class="carousel-dots">
+        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+      </div>
+    </ul>
+  </div>
+
+</body>
+</html>
