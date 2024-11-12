@@ -420,16 +420,24 @@
 </main>
 
 
-<div id="modal-container" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+<div id="modal-container" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" style="z-index: 101;">
   <div class="modal-background">
-    <div class="modal w-full mx-auto p-6 md:p-8 bg-white rounded-lg shadow-lg overflow-auto" style="max-height: 75vh; max-width: calc(100% - 100px); position: relative;">
-      <iframe id="portfolio" src="" class="w-full h-full" style="border: none; height: 600px; max-width: 100%; overflow: hidden;"></iframe>
-      
-      <!-- Floating Close Button -->
-      <button id="close-btn" class="absolute top-2 right-2 bg-gray-500 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none">
-        ×
-      </button>
-    </div>
+<div class="modal w-full mx-auto p-6 md:p-8 bg-white rounded-lg shadow-lg overflow-auto pb-[56.25%] items-center justify-center" 
+     style="height: 85vh; max-height: 100vh; max-width: calc(100% - 100px); position: relative; overflow: hidden;">
+  
+  <!-- Iframe for the portfolio -->
+  <iframe id="portfolio" 
+          src="project1.html" 
+          class="w-full h-full absolute inset-0 mt-10" 
+          style="border: none;">
+  </iframe>
+
+  <!-- Floating Close Button -->
+  <button id="close-btn" class="absolute top-2 right-2 bg-gray-500 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none">
+    ×
+  </button>
+</div>
+
   </div>
 </div>
 
