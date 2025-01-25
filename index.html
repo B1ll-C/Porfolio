@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <!-- Add this to the head of your HTML to include Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -14,6 +13,9 @@
   <link rel="stylesheet" type="text/css" href="css/carousel.css">
   <link rel="stylesheet" type="text/css" href="css/socials.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body class="">
@@ -74,79 +76,277 @@
 
 
 <section id="About" class="flex flex-col lg:flex-row justify-between overflow-y-scroll">
-  <!-- Left Section: Skills -->
-  <div class="w-full lg:w-1/2 lg:pr-8 px-4 lg:px-0">
-    <div class="ml-0 lg:ml-20">
-      <div class="mt-10 lg:mt-20 mb-10 lg:mb-24">
-        <h2 class="text-4xl lg:text-6xl font-bold">Skills &</h2>
-        <h2 class="text-4xl lg:text-6xl font-bold">Experience</h2>
-      </div>
-      <div class="w-full lg:w-1/2">
-        <h2 class="text-xl lg:text-2xl font-semibold">Skills</h2>
-        <div class="grid grid-cols-4 gap-y-6 lg:gap-y-10 mt-6 lg:mt-10">
-          <img src="images/icons/html.png" alt="HTML">
-          <img src="images/icons/css.png" alt="CSS">
-          <img src="images/icons/js.png" alt="JavaScript">
-          <img src="images/icons/php.png" alt="PHP">
-          <img src="images/icons/java.png" alt="Java">
-          <img src="images/icons/c++++.png" alt="C++">
-          <img src="images/icons/python.png" alt="Python">
-          <img src="images/icons/node.png" alt="Node.js">
-          <img src="images/icons/mysql.png" alt="MySQL">
-          <img src="images/icons/firebase.png" alt="Firebase">
-          <img src="images/icons/android.png" alt="Android">
+  <section class="intro" >
+
+  <div class="intro-block">
+    <div class="centerfold-wrap">
+      <div class="hex-master-wrap">
+        <div class="grid-1">
+
+          <div class="hex-wrap html" data-title="HTML" data-content="html-desc" data-color="#E34C26">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/html-1.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hex-wrap css" data-title="CSS" data-content="css-desc" data-color="#1c88c7">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/css-3.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hex-wrap javascript" data-title="JAVASCRIPT" data-content="javascript-desc" data-color="#e9ca32">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/javascript-1.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="hex-wrap php" data-title="PHP" data-content="php-desc" data-color="#777bb3">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/php.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hex-wrap java" data-title="JAVA" data-content="java-desc" data-color="#e76f00">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/java-4.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hex-wrap c4" data-title="C#" data-content="c4-desc" data-color="#390091">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/c--4.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hex-wrap python" data-title="PYTHON" data-content="python-desc" data-color="#3772a4">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/python-5.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="hex-wrap nodejs" data-title="NODE JS" data-content="nodejs-desc" data-color="#8cc84b">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/nodejs-3.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hex-wrap mysql" data-title="MySQL" data-content="mysql-desc" data-color="#00546b">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/mysql-logo-pure.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hex-wrap firebase" data-title="FIREBASE" data-content="firebase-desc" data-color="#dd2c00">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/firebase.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <div class="hex-wrap android" data-title="ANDROID" data-content="android-desc" data-color="#4285f4">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/android-studio.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hex-wrap git" data-title="GIT" data-content="git-desc" data-color="#de4c36">
+              <div class="hex-init"></div>
+              <div class="hex-borders">
+                <div class="iconborder-1"></div>
+                <div class="iconborder-2"></div>
+                <div class="iconborder-3"></div>
+              </div>
+              <div class="label"><img src="images/icons/git.svg"/></div>
+            <div class="hexagon">
+              <div class="hex-inner-1">
+                <div class="hex-inner-2"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="code-display">
+        <div class="code-description">
+          <div class="html-desc">
+              <p class="code-title"></p>
+             <p><span>Projects:</span> Leveraged HTML to create the foundational structure of websites, ensuring clean and semantic code for optimal performance and accessibility. Built layouts that seamlessly integrate with CSS and JavaScript to deliver dynamic, responsive, and user-friendly interfaces.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="css-desc">
+              <p class="code-title"></p>
+               <p><span>Projects:</span> Utilized CSS to bring websites to life by adding visually appealing styles, layouts, and designs. Created responsive and adaptive interfaces, implemented animations, and ensured consistent branding across all pages to enhance user engagement and experience.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="javascript-desc">
+              <p class="code-title"></p>
+               <p><span>Projects:</span> Applied JavaScript to build interactive and dynamic website features, including form validations, animations, and real-time updates. Enhanced user experience by implementing functionality such as dropdown menus, modal pop-ups, and API integrations to deliver seamless and responsive applications.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="php-desc">
+              <p class="code-title"></p>
+              <p><span>Projects:</span> Utilized PHP to develop server-side logic for dynamic web applications. Built robust back-end systems, managed databases, and created secure authentication processes. Ensured seamless communication between the front-end and back-end by integrating APIs and handling user data effectively.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="java-desc">
+              <p class="code-title"></p>
+               <p><span>Projects:</span> Leveraged Java to develop efficient and scalable applications, utilizing object-oriented programming (OOP) principles such as inheritance, encapsulation, polymorphism, and abstraction. Designed modular and reusable code structures to solve complex problems and ensure maintainability in projects.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="c4-desc">
+              <p class="code-title"></p>
+             <p><span>Projects:</span> Developed desktop applications using C# and WinForms, focusing on creating intuitive and responsive user interfaces. Leveraged object-oriented programming (OOP) principles to design modular and maintainable code, implemented event-driven programming for dynamic user interactions, and integrated back-end logic to deliver fully functional applications.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="python-desc">
+              <p class="code-title"></p>
+              <p><span>Projects:</span> Utilized Python as a versatile tool for various applications, including automation, web back-end development, machine learning, and data analysis. Automated repetitive tasks to improve efficiency and save time. Designed and implemented robust web back-end servers using frameworks like Django. Applied machine learning techniques to build predictive models and solve complex problems.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="nodejs-desc">
+              <p class="code-title"></p>
+               <p><span>Projects:</span> Built scalable and high-performance back-end systems using Node.js. Developed RESTful APIs to enable seamless communication between the server and client, integrated databases such as Firebase Database and MySQL for efficient data storage and retrieval, and implemented authentication and authorization systems to ensure security. Leveraged Node.js's asynchronous capabilities to handle real-time features and high-traffic applications efficiently.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="mysql-desc">
+              <p class="code-title"></p>
+               <p><span>Projects:</span> Utilized MySQL to design and manage relational databases, ensuring efficient data storage, retrieval, and management. Crafted complex queries to interact with large datasets, optimized database performance with indexing and query optimization, and maintained data integrity through constraints and normalization. Integrated MySQL seamlessly with back-end systems for dynamic web applications and data-driven solutions.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="firebase-desc">
+              <p class="code-title"></p>
+             <p><span>Projects:</span> Used Firebase to build scalable apps with Firestore for real-time data storage, Firebase Storage for secure file management, Firebase ML for integrating machine learning models, and Firebase Authentication for seamless and secure user authentication across multiple platforms.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="android-desc">
+              <p class="code-title"></p>
+               <p><span>Projects:</span> Developed mobile applications using Android Studio, utilizing Java and Kotlin for efficient app development. Designed responsive and user-friendly interfaces with XML, integrated various Android APIs for enhanced functionality, and implemented features like push notifications, databases, and location services. Focused on performance optimization and building apps that run smoothly across different devices and Android versions.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          <div class="git-desc">
+              <p class="code-title"></p>
+              <p><span>Projects:</span> Utilized Git for version control in collaborative software development projects. Managed code versions, tracked changes, and coordinated team workflows using Git branches and pull requests. Ensured seamless collaboration by resolving merge conflicts and maintaining a clean and efficient commit history. Integrated Git with GitHub for code hosting, review, and collaboration.</p>
+              <div class="code-icon"></div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+        <div class="hoverblock"></div>
+    </div> <!-- End Centerfold-Wrap -->
   </div>
 
-  <!-- Right Section: Experience -->
-  <div class="w-full lg:w-1/2 lg:pl-8 px-4 lg:px-0 lg:mr-24">
-    <div class="mt-10 lg:mt-32">
-      <h2 class="text-xl lg:text-2xl font-semibold mb-6 lg:mb-10">Experience</h2>
-
-
-
-      <!-- Experience Items -->
-      <div class="flex flex-col gap-6 overflow-y-scroll h-96">
-      <!-- Web Development Section -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <h2 class="text-xl font-bold text-gray-800 mb-4">Web Development</h2>
-        <div class="space-y-2">
-          <div>
-            <h3 class="text-lg font-semibold text-gray-700">Node.js Website</h3>
-            <p class="text-gray-600">Developed a dynamic website with Node.js as the backend, leveraging Firebase for authentication and database management.</p>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold text-gray-700">PHP Website</h3>
-            <p class="text-gray-600">Created a feature-rich website using PHP and MySQL, styled with the TailwindCSS framework for a modern and responsive design.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Development Section -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <h2 class="text-xl font-bold text-gray-800 mb-4">Mobile Development</h2>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-700">Mobile Application</h3>
-          <p class="text-gray-600">Built a robust mobile application in Java, integrating Firebase Database, Firebase Storage, and Firebase ML to provide seamless functionality and data management.</p>
-        </div>
-      </div>
-
-      <!-- Machine Learning Section -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <h2 class="text-xl font-bold text-gray-800 mb-4">Machine Learning</h2>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-700">Image Classification Model</h3>
-          <p class="text-gray-600">Designed and trained a custom YOLOv8 model for identifying indigenous tree species and detecting their associated pests and diseases.</p>
-        </div>
-      </div>
-
-
-
-      </div>
-    </div>
-  </div>
+</section>
 </section>
 
 
@@ -553,6 +753,10 @@ $('#close-btn').click(function(){
   $('body').removeClass('modal-active');
 });
 </script>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js'></script>
+<script  src="js/script.js"></script>
 </body>
 </html>
