@@ -198,49 +198,49 @@ z-index: -1;
 }
 
 .html-desc.desc-active::after {
-background: url(icons/html-1.svg);
+background: url(../images/icons/html-1.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .css-desc.desc-active::after {
-background: url(icons/css-3.svg);
+background: url(../images/icons/css-3.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .javascript-desc.desc-active::after {
-background: url(icons/javascript-1.svg);
+background: url(../images/icons/javascript-1.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .php-desc.desc-active::after {
-background: url(icons/php.svg);
+background: url(../images/icons/php.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .java-desc.desc-active::after {
-background: url(icons/java-4.svg);
+background: url(../images/icons/java-4.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .c4-desc.desc-active::after {
-background: url(icons/c--4.svg);
+background: url(../images/icons/c--4.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .python-desc.desc-active::after {
-background: url(icons/python-5.svg);
+background: url(../images/icons/python-5.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
@@ -248,7 +248,7 @@ background-position: right center;
 
 
 .nodejs-desc.desc-active::after {
-background: url(icons/nodejs-3.svg);
+background: url(../images/icons/nodejs-3.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
@@ -256,7 +256,7 @@ background-position: right center;
 
 
 .mysql-desc.desc-active::after {
-background: url(icons/mysql-logo-pure.svg);
+background: url(../images/icons/mysql-logo-pure.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
@@ -264,7 +264,7 @@ background-position: right center;
 
 
 .firebase-desc.desc-active::after {
-background: url(icons/firebase.svg);
+background: url(../images/icons/firebase.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
@@ -272,7 +272,7 @@ background-position: right center;
 
 
 .android-desc.desc-active::after {
-background: url(icons/android-studio.svg);
+background: url(../images/icons/android-studio.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
@@ -280,7 +280,7 @@ background-position: right center;
 
 
 .git-desc.desc-active::after {
-background: url(icons/git.svg);
+background: url(../images/icons/git.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
