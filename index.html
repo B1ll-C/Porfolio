@@ -1,765 +1,672 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <!-- Add this to the head of your HTML to include Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/card.css">
-  <link rel="stylesheet" type="text/css" href="css/button.css">
-  <link rel="stylesheet" type="text/css" href="css/modal.css">
-  <link rel="stylesheet" type="text/css" href="css/carousel.css">
-  <link rel="stylesheet" type="text/css" href="css/socials.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body class="">
-
-	<nav class="bg-white border-gray-200 nav_gradient w-full fixed" style="z-index: 100;">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-<!--     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Flowbite</span>
-    </a> -->
-    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">My Portfolio</span>
-
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-        <li>
-          <a href="#Home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#About" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">About</a>
-        </li>
-        <li>
-          <a href="#Project" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">Project</a>
-        </li>
-        <li>
-          <a href="#Contact" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">Contact</a>
-        </li>
-        <li>
-          <a href="#Achievements" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">Achievements</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<main class="y mandatory-scroll-snapping">
-<section id="Home" class="flex flex-col lg:flex-row items-center justify-center lg:space-x-16 space-y-6 lg:space-y-0 min-h-screen">
-    <!-- Text Section -->
-    <div class="text-center lg:text-left space-y-2">
-        <h1 class="text-2xl lg:text-3xl font-semibold">Hi, I'm Paul—a programmer</h1>
-        <h1 class="text-2xl lg:text-3xl font-semibold">Passionate about creating</h1>
-        <h1 class="text-2xl lg:text-3xl font-semibold">efficient, impactful solutions</h1>
-        <h1 class="text-2xl lg:text-3xl font-semibold">that bring ideas to life</h1>
-    </div>
-
-    <!-- Image Section -->
-    <div class="flex justify-center lg:justify-start w-full lg:w-auto">
-        <img src="images/self.png" class="w-3/4 lg:w-full max-w-xs lg:max-w-sm rounded-lg">
-    </div>
-</section>
-
-
-
-<section id="About" class="flex flex-col lg:flex-row justify-between overflow-y-scroll">
-  <section class="intro" >
-
-  <div class="intro-block">
-    <div class="centerfold-wrap">
-      <div class="hex-master-wrap">
-        <div class="grid-1">
-
-          <div class="hex-wrap html" data-title="HTML" data-content="html-desc" data-color="#E34C26">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/html-1.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <!-- Add this to the head of your HTML to include Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/card.css">
+      <link rel="stylesheet" type="text/css" href="css/button.css">
+      <!-- <link rel="stylesheet" type="text/css" href="css/modal.css"> -->
+      <link rel="stylesheet" type="text/css" href="css/carousel.css">
+      <link rel="stylesheet" type="text/css" href="css/socials.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="slider/fonts/feather/style.css">
+      <!-- General demo styles & header -->
+      <link rel="stylesheet" type="text/css" href="slider/css/demo.css" />
+      <!-- Component styles -->
+      <link rel="stylesheet" type="text/css" href="slider/css/component.css" />
+      <script src="slider/js/modernizr.custom.js"></script>
+   </head>
+   <body class="">
+      <nav class="bg-white border-gray-200 nav_gradient w-full fixed" style="z-index: 1000;">
+         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <!--     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+               <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+               <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Flowbite</span>
+               </a> -->
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">My Portfolio</span>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+               <span class="sr-only">Open main menu</span>
+               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+               </svg>
+            </button>
+            <div class=" w-full md:block md:w-auto" id="navbar-default">
+               <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                  <li>
+                     <a href="#Home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+                  </li>
+                  <li>
+                     <a href="#About" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">About</a>
+                  </li>
+                  <li>
+                     <a href="#Project" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">Project</a>
+                  </li>
+                  <li>
+                     <a href="#Contact" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">Contact</a>
+                  </li>
+                  <li>
+                     <a href="#Achievements" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">Achievements</a>
+                  </li>
+               </ul>
             </div>
-          </div>
-
-          <div class="hex-wrap css" data-title="CSS" data-content="css-desc" data-color="#1c88c7">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/css-3.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
+         </div>
+      </nav>
+      <main class="y mandatory-scroll-snapping">
+         <section id="Home" class="flex flex-col lg:flex-row items-center justify-center lg:space-x-16 space-y-6 lg:space-y-0 min-h-screen">
+            <!-- Text Section -->
+            <div class="text-center lg:text-left space-y-2">
+               <h1 class="text-2xl lg:text-3xl font-semibold">Hi, I'm Paul—a programmer</h1>
+               <h1 class="text-2xl lg:text-3xl font-semibold">Passionate about creating</h1>
+               <h1 class="text-2xl lg:text-3xl font-semibold">efficient, impactful solutions</h1>
+               <h1 class="text-2xl lg:text-3xl font-semibold">that bring ideas to life</h1>
             </div>
-          </div>
-          
-        </div>
-        <div class="grid-2">
-          <div class="hex-wrap javascript" data-title="JAVASCRIPT" data-content="javascript-desc" data-color="#e9ca32">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/javascript-1.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
+            <!-- Image Section -->
+            <div class="flex justify-center lg:justify-start w-full lg:w-auto">
+               <img src="images/self.png" class="w-3/4 lg:w-full max-w-xs lg:max-w-sm rounded-lg">
             </div>
-          </div>
-          <div class="hex-wrap php" data-title="PHP" data-content="php-desc" data-color="#777bb3">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/php.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
+         </section>
+         <section id="About" class="flex flex-col lg:flex-row justify-between overflow-y-scroll">
+            <section class="intro" >
+               <div class="intro-block">
+                  <div class="centerfold-wrap">
+                     <div class="hex-master-wrap">
+                        <div class="grid-1">
+                           <div class="hex-wrap html" data-title="HTML" data-content="html-desc" data-color="#E34C26">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/html-1.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hex-wrap css" data-title="CSS" data-content="css-desc" data-color="#1c88c7">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/css-3.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="grid-2">
+                           <div class="hex-wrap javascript" data-title="JAVASCRIPT" data-content="javascript-desc" data-color="#e9ca32">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/javascript-1.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hex-wrap php" data-title="PHP" data-content="php-desc" data-color="#777bb3">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/php.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hex-wrap java" data-title="JAVA" data-content="java-desc" data-color="#e76f00">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/java-4.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="grid-3">
+                           <div class="hex-wrap c4" data-title="C#" data-content="c4-desc" data-color="#390091">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/c--4.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hex-wrap python" data-title="PYTHON" data-content="python-desc" data-color="#3772a4">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/python-5.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hex-wrap nodejs" data-title="NODE JS" data-content="nodejs-desc" data-color="#8cc84b">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/nodejs-3.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hex-wrap mysql" data-title="MySQL" data-content="mysql-desc" data-color="#00546b">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/mysql-logo-pure.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="grid-4">
+                           <div class="hex-wrap firebase" data-title="FIREBASE" data-content="firebase-desc" data-color="#dd2c00">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/firebase.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hex-wrap android" data-title="ANDROID" data-content="android-desc" data-color="#4285f4">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/android-studio.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hex-wrap git" data-title="GIT" data-content="git-desc" data-color="#de4c36">
+                              <div class="hex-init"></div>
+                              <div class="hex-borders">
+                                 <div class="iconborder-1"></div>
+                                 <div class="iconborder-2"></div>
+                                 <div class="iconborder-3"></div>
+                              </div>
+                              <div class="label"><img src="images/icons/git.svg"/></div>
+                              <div class="hexagon">
+                                 <div class="hex-inner-1">
+                                    <div class="hex-inner-2"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="code-display">
+                        <div class="code-description">
+                           <div class="html-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Leveraged HTML to create the foundational structure of websites, ensuring clean and semantic code for optimal performance and accessibility. Built layouts that seamlessly integrate with CSS and JavaScript to deliver dynamic, responsive, and user-friendly interfaces.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="css-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Utilized CSS to bring websites to life by adding visually appealing styles, layouts, and designs. Created responsive and adaptive interfaces, implemented animations, and ensured consistent branding across all pages to enhance user engagement and experience.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="javascript-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Applied JavaScript to build interactive and dynamic website features, including form validations, animations, and real-time updates. Enhanced user experience by implementing functionality such as dropdown menus, modal pop-ups, and API integrations to deliver seamless and responsive applications.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="php-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Utilized PHP to develop server-side logic for dynamic web applications. Built robust back-end systems, managed databases, and created secure authentication processes. Ensured seamless communication between the front-end and back-end by integrating APIs and handling user data effectively.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="java-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Leveraged Java to develop efficient and scalable applications, utilizing object-oriented programming (OOP) principles such as inheritance, encapsulation, polymorphism, and abstraction. Designed modular and reusable code structures to solve complex problems and ensure maintainability in projects.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="c4-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Developed desktop applications using C# and WinForms, focusing on creating intuitive and responsive user interfaces. Leveraged object-oriented programming (OOP) principles to design modular and maintainable code, implemented event-driven programming for dynamic user interactions, and integrated back-end logic to deliver fully functional applications.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="python-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Utilized Python as a versatile tool for various applications, including automation, web back-end development, machine learning, and data analysis. Automated repetitive tasks to improve efficiency and save time. Designed and implemented robust web back-end servers using frameworks like Django. Applied machine learning techniques to build predictive models and solve complex problems.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="nodejs-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Built scalable and high-performance back-end systems using Node.js. Developed RESTful APIs to enable seamless communication between the server and client, integrated databases such as Firebase Database and MySQL for efficient data storage and retrieval, and implemented authentication and authorization systems to ensure security. Leveraged Node.js's asynchronous capabilities to handle real-time features and high-traffic applications efficiently.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="mysql-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Utilized MySQL to design and manage relational databases, ensuring efficient data storage, retrieval, and management. Crafted complex queries to interact with large datasets, optimized database performance with indexing and query optimization, and maintained data integrity through constraints and normalization. Integrated MySQL seamlessly with back-end systems for dynamic web applications and data-driven solutions.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="firebase-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Used Firebase to build scalable apps with Firestore for real-time data storage, Firebase Storage for secure file management, Firebase ML for integrating machine learning models, and Firebase Authentication for seamless and secure user authentication across multiple platforms.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="android-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Developed mobile applications using Android Studio, utilizing Java and Kotlin for efficient app development. Designed responsive and user-friendly interfaces with XML, integrated various Android APIs for enhanced functionality, and implemented features like push notifications, databases, and location services. Focused on performance optimization and building apps that run smoothly across different devices and Android versions.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                           <div class="git-desc">
+                              <p class="code-title"></p>
+                              <p><span>Projects:</span> Utilized Git for version control in collaborative software development projects. Managed code versions, tracked changes, and coordinated team workflows using Git branches and pull requests. Ensured seamless collaboration by resolving merge conflicts and maintaining a clean and efficient commit history. Integrated Git with GitHub for code hosting, review, and collaboration.</p>
+                              <div class="code-icon"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="hoverblock"></div>
+                  </div>
+                  <!-- End Centerfold-Wrap -->
+               </div>
+            </section>
+         </section>
+         <!-- Projects -->
+         <section id="Project" class="flex justify-center py-40 overflow-y-scroll ">
+            <div class="container">
+              <h1 class="text-4xl sm:text-5xl font-bold text-center">Projects</h1>
+               <section class="slider">
+                  <div class="slide slide--current" data-content="content-1">
+                     <div class="slide__mover">
+                        <div class="zoomer flex-center">
+                           <img class="zoomer__image" src="slider/images/iphone.png" alt="iPhone" />
+                           <div class="preview">
+                              <img src="slider/images/mobile_preview.jpg" alt="iPhone app preview" />
+                              <div class="zoomer__area zoomer__area--size-2"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <h2 class="slide__title"><span>Moble Application</span>GROOT</h2>
+                  </div>
+                  <div class="slide" data-content="content-2">
+                     <div class="slide__mover">
+                        <div class="zoomer flex-center">
+                           <img class="zoomer__image" src="slider/images/macbook.png" alt="MacBook" />
+                           <div class="preview">
+                              <img src="slider/images/web_mac_preview.png" alt="MacBook app preview" />
+                              <div class="zoomer__area zoomer__area--size-3"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <h2 class="slide__title"><span>Web Application</span>GROOT</h2>
+                  </div>
+                  <div class="slide" data-content="content-3">
+                     <div class="slide__mover">
+                        <div class="zoomer flex-center">
+                           <img class="zoomer__image" src="slider/images/imac.png" alt="iMac" />
+                           <div class="preview">
+                              <img src="slider/images/mc_imac_preview.png" alt="iMac app preview" />
+                              <div class="zoomer__area zoomer__area--size-5"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <h2 class="slide__title"><span>Web Application</span> MC-Studio</h2>
+                  </div>
+                  <nav class="slider__nav">
+                     <button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+                     <button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+                     <button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+                  </nav>
+               </section>
+               <section class="content">
+                  <div class="content__item" id="content-1">
+                     <div class="relative w-full">
+                        <!-- Carousel Images -->
+                        <div class="carousel-images overflow-hidden relative">
+                           <img class="content__item-img rounded-right w-full" src="images/groot_mobile/1.jpg" alt="GROOT MOBILE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_mobile/2.jpg" alt="GROOT MOBILE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_mobile/3.jpg" alt="GROOT MOBILE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_mobile/4.jpg" alt="GROOT MOBILE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_mobile/5.jpg" alt="GROOT MOBILE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_mobile/6.jpg" alt="GROOT MOBILE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_mobile/7.jpg" alt="GROOT MOBILE" />
+                           <!-- Add more images as needed -->
+                        </div>
+                        <!-- Carousel Controls (Prev/Next) -->
+                        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-800 px-4 py-2" onclick="moveSlide(-1, 'content-1')">&#10094;</button>
+                        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-800 px-4 py-2" onclick="moveSlide(1, 'content-1')">&#10095;</button>
+                     </div>
+                     <div class="content__item-inner">
+                        <h2 style="color: #6aae43;">Greenery Recognition Observation and Optimization Tool</h2>
+                        <h3><span style="color:#6aae43;">GROOT</span> is a mobile application for the digital identification of indigenous trees and their major pests and diseases.</h3>
+                        <p>GROOT is a mobile application leveraging the YOLOv8 model for the identification of indigenous trees, pests, and diseases. In addition to real-time identification, it offers a comprehensive library of tree species, pests, and diseases, providing valuable insights into their management and prevention. The app seamlessly integrates with Firebase Database and Firebase Storage, enabling effective monitoring and tracking of tree health status.</p>
+                     </div>
+                  </div>
+                  <div class="content__item" id="content-2">
+                     <div class="relative w-full">
+                        <!-- Carousel Images -->
+                        <div class="carousel-images overflow-hidden relative">
+                           <img class="content__item-img rounded-right w-full" src="images/groot_web/1.png" alt="GROOT WEBSITE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_web/2.png" alt="GROOT WEBSITE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_web/3.png" alt="GROOT WEBSITE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_web/4.png" alt="GROOT WEBSITE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_web/5.png" alt="GROOT WEBSITE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_web/6.png" alt="GROOT WEBSITE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_web/7.png" alt="GROOT WEBSITE" />
+                           <img class="content__item-img rounded-right w-full" src="images/groot_web/8.png" alt="GROOT WEBSITE" />
+                           <!-- Add more images as needed -->
+                        </div>
+                        <!-- Carousel Controls (Prev/Next) -->
+                        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-800 px-4 py-2" onclick="moveSlide(-1, 'content-2')">&#10094;</button>
+                        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-800 px-4 py-2" onclick="moveSlide(1, 'content-2')">&#10095;</button>
+                     </div>
+                     <div class="content__item-inner">
+                        <h2>Greenery Recognition Observation and Optimization Tool</h2>
+                        <h3>A web application centralizes GROOT mobile data for monitoring tree health, detecting pests, and improving tree care.</h3>
+                        <p>The GROOT web application integrates Firebase services, including Firebase Storage, Firestore Database, and Firebase ML, to efficiently store and manage data. It leverages these technologies to visualize tree health data and predictive models, providing a robust platform for real-time monitoring and analysis.</p>
+                     </div>
+                  </div>
+                  <div class="content__item" id="content-3">
+                     <div class="relative w-full">
+                        <!-- Carousel Images -->
+                        <div class="carousel-images overflow-hidden relative">
+                           <img class="content__item-img rounded-right w-full" src="images/mc/1.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/2.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/3.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/4.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/5.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/6.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/7.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/8.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/9.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/10.png" alt="MC-Studio" />
+                           <img class="content__item-img rounded-right w-full" src="images/mc/11.png" alt="MC-Studio" />
+                           <!-- Add more images as needed -->
+                        </div>
+                        <!-- Carousel Controls (Prev/Next) -->
+                        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-800 px-4 py-2" onclick="moveSlide(-1, 'content-3')">&#10094;</button>
+                        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-800 px-4 py-2" onclick="moveSlide(1, 'content-3')">&#10095;</button>
+                     </div>
+                     <div class="content__item-inner">
+                        <h2>MC Studio</h2>
+                        <h3>MC STUDIO’s site showcases photography services, packages, and booking options.</h3>
+                        <p>The application leverages PHP and SMTP protocols to facilitate seamless client booking and notification processes. By integrating these technologies, it ensures reliable communication and scheduling for users. MySQL is employed as the backend database to store and manage client information, booking data, and notifications, offering efficient data retrieval and a robust, scalable solution for the platform.</p>
+                     </div>
+                  </div>
+                  <button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+               </section>
             </div>
-          </div>
-          <div class="hex-wrap java" data-title="JAVA" data-content="java-desc" data-color="#e76f00">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/java-4.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
+         </section>
+         <!-- Contact  -->
+         <section id="Contact" class="flex flex-col lg:flex-row items-center justify-center lg:space-x-16 space-y-6 lg:space-y-0 min-h-screen">
+            <!-- Text Section -->
+            <div class="w-full sm:w-1/2 sm:pr-8 mb-8 sm:mb-0">
+               <div class="ml-4 sm:ml-20">
+                  <div class="mt-12 sm:mt-20 mb-10">
+                     <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Let's Discuss</h2>
+                     <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Your Project</h2>
+                  </div>
+                  <div class="w-full sm:w-3/4 mx-auto">
+                     <!-- Email Section -->
+                     <div class="flex items-center justify-between border-t-4 border-gray-900 mb-10 pt-4">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgb(44, 44, 44);">
+                           <img src="images/icons/mail.svg" class="w-6 h-6" alt="Mail Icon">
+                        </div>
+                        <div class="w-3/4">
+                           <h2 class="text-l text-gray-500">Email</h2>
+                           <h2 class="text-xl sm:text-2xl font-semibold">ict1gonzalodo.cdlb@gmail.com</h2>
+                        </div>
+                     </div>
+                     <!-- Phone Section -->
+                     <div class="flex items-center justify-between border-t-4 border-gray-900 mb-10 pt-4">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgb(44, 44, 44);">
+                           <img src="images/icons/cell.svg" class="w-6 h-6" alt="Cell Icon">
+                        </div>
+                        <div class="w-3/4">
+                           <h2 class="text-l text-gray-500">Cellphone Number</h2>
+                           <h2 class="text-xl sm:text-2xl font-semibold">+63 9** *** ****</h2>
+                        </div>
+                     </div>
+                     <!-- Others Section -->
+                     <div class="flex items-center justify-between border-t-4 border-gray-900 mb-10 pt-4">
+                        <div class="w-3/4 flex flex-wrap">
+                           <div class="card_social">
+                              <a href="#" class="socialContainer containerOne">
+                              <img src="images/icons/github-mark-white.svg" class="socialSvg">
+                              </a>
+                           </div>
+                           <div class="card_social">
+                              <a href="#" class="socialContainer containerTwo">
+                              <img src="images/icons/linkedin.svg" class="socialSvg">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-          
-        </div>
-        <div class="grid-3">
-          <div class="hex-wrap c4" data-title="C#" data-content="c4-desc" data-color="#390091">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/c--4.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
+            <!-- Image Section -->
+            <div class="flex justify-center lg:justify-start w-full lg:w-auto">
+               <img src="images/self.png" class="w-3/4 lg:w-full max-w-xs lg:max-w-sm rounded-lg">
             </div>
-          </div>
-          <div class="hex-wrap python" data-title="PYTHON" data-content="python-desc" data-color="#3772a4">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/python-5.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
+         </section>
+         <!-- Achievements -->
+         <section id="Achievements" class="flex flex-col sm:flex-row justify-between py-8 overflow-y-scroll">
+            <!-- Left Section: Badges -->
+            <div class="w-full sm:w-1/2 sm:pr-8 mb-8 sm:mb-0">
+               <div class="ml-4 sm:ml-20">
+                  <div class="mt-12 sm:mt-20 mb-24">
+                     <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Badges &</h2>
+                     <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Certificates</h2>
+                  </div>
+                  <div class="w-3/4  mx-auto">
+                     <h2 class="text-2xl font-semibold">Badges</h2>
+                     <div class="grid grid-cols-3 gap-4">
+                        <a href="https://www.credly.com/badges/702e8572-85db-4f4b-9e56-9d2af95ed375/public_url" target="_blank"><img src="https://images.credly.com/size/340x340/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png"></a>
+                        <a href="https://www.credly.com/badges/ddc1b594-c12b-439a-ab28-17e48996d9d3/public_url" target="_blank"><img src="https://images.credly.com/size/340x340/images/5bdd6a39-3e03-4444-9510-ecff80c9ce79/image.png"></a>
+                        <a href="https://www.credly.com/badges/6e841ddb-3953-484d-8430-523790f6c2fc/public_url" target="_blank"><img src="https://images.credly.com/images/19e742ef-13be-4d26-87ed-ac8f5fd0643c/image.png"></a>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="hex-wrap nodejs" data-title="NODE JS" data-content="nodejs-desc" data-color="#8cc84b">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/nodejs-3.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
+            <!-- Right Section: Certificate -->
+            <div class="w-full sm:w-1/2 sm:pl-8 sm:mr-24 mb-8 sm:mb-0">
+               <div class="mt-12 sm:mt-32">
+                  <h2 class="text-2xl font-semibold mb-10">Certificate</h2>
+                  <div class="flex flex-col sm:flex-row items-center justify-between border-t-4 border-white mb-10 pt-4">
+                     <div class="w-full sm:w-1/4 text-center sm:text-left">
+                        <h5 class="font-semibold">August 27, 2024</h5>
+                     </div>
+                     <div class="w-full sm:w-2/4 text-center sm:text-left">
+                        <h2 class="text-2xl sm:text-3xl font-bold">Cisco Networking Academy</h2>
+                        <h2 class="text-xl sm:text-2xl font-semibold">Introduction to Cybersecurity</h2>
+                     </div>
+                     <div class="w-full sm:w-1/4 flex items-center justify-center mt-4 sm:mt-0">
+                        <button class="w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" style="background: #FBBF24;">
+                        <i class="fas fa-arrow-alt-circle-right text-2xl"></i>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="flex flex-col sm:flex-row items-center justify-between border-t-4 border-white mb-10 pt-4">
+                     <div class="w-full sm:w-1/4 text-center sm:text-left">
+                        <h5 class="font-semibold">January 16, 2025</h5>
+                     </div>
+                     <div class="w-full sm:w-2/4 text-center sm:text-left">
+                        <h2 class="text-2xl sm:text-3xl font-bold">Cisco Networking Academy</h2>
+                        <h2 class="text-xl sm:text-2xl font-semibold">Networking Basics</h2>
+                     </div>
+                     <div class="w-full sm:w-1/4 flex items-center justify-center mt-4 sm:mt-0">
+                        <button class="w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" style="background: #FBBF24;">
+                        <i class="fas fa-arrow-alt-circle-right text-2xl"></i>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="flex flex-col sm:flex-row items-center justify-between border-t-4 border-white mb-10 pt-4">
+                     <div class="w-full sm:w-1/4 text-center sm:text-left">
+                        <h5 class="font-semibold">January 20, 2025</h5>
+                     </div>
+                     <div class="w-full sm:w-2/4 text-center sm:text-left">
+                        <h2 class="text-2xl sm:text-3xl font-bold">Cisco Networking Academy</h2>
+                        <h2 class="text-xl sm:text-2xl font-semibold">Computer Hardware Basics</h2>
+                     </div>
+                     <div class="w-full sm:w-1/4 flex items-center justify-center mt-4 sm:mt-0">
+                        <button class="w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" style="background: #FBBF24;">
+                        <i class="fas fa-arrow-alt-circle-right text-2xl"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="hex-wrap mysql" data-title="MySQL" data-content="mysql-desc" data-color="#00546b">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/mysql-logo-pure.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-
-        <div class="grid-4">
-          <div class="hex-wrap firebase" data-title="FIREBASE" data-content="firebase-desc" data-color="#dd2c00">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/firebase.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
-            </div>
-          </div>
-          <div class="hex-wrap android" data-title="ANDROID" data-content="android-desc" data-color="#4285f4">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/android-studio.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="hex-wrap git" data-title="GIT" data-content="git-desc" data-color="#de4c36">
-              <div class="hex-init"></div>
-              <div class="hex-borders">
-                <div class="iconborder-1"></div>
-                <div class="iconborder-2"></div>
-                <div class="iconborder-3"></div>
-              </div>
-              <div class="label"><img src="images/icons/git.svg"/></div>
-            <div class="hexagon">
-              <div class="hex-inner-1">
-                <div class="hex-inner-2"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="code-display">
-        <div class="code-description">
-          <div class="html-desc">
-              <p class="code-title"></p>
-             <p><span>Projects:</span> Leveraged HTML to create the foundational structure of websites, ensuring clean and semantic code for optimal performance and accessibility. Built layouts that seamlessly integrate with CSS and JavaScript to deliver dynamic, responsive, and user-friendly interfaces.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="css-desc">
-              <p class="code-title"></p>
-               <p><span>Projects:</span> Utilized CSS to bring websites to life by adding visually appealing styles, layouts, and designs. Created responsive and adaptive interfaces, implemented animations, and ensured consistent branding across all pages to enhance user engagement and experience.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="javascript-desc">
-              <p class="code-title"></p>
-               <p><span>Projects:</span> Applied JavaScript to build interactive and dynamic website features, including form validations, animations, and real-time updates. Enhanced user experience by implementing functionality such as dropdown menus, modal pop-ups, and API integrations to deliver seamless and responsive applications.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="php-desc">
-              <p class="code-title"></p>
-              <p><span>Projects:</span> Utilized PHP to develop server-side logic for dynamic web applications. Built robust back-end systems, managed databases, and created secure authentication processes. Ensured seamless communication between the front-end and back-end by integrating APIs and handling user data effectively.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="java-desc">
-              <p class="code-title"></p>
-               <p><span>Projects:</span> Leveraged Java to develop efficient and scalable applications, utilizing object-oriented programming (OOP) principles such as inheritance, encapsulation, polymorphism, and abstraction. Designed modular and reusable code structures to solve complex problems and ensure maintainability in projects.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="c4-desc">
-              <p class="code-title"></p>
-             <p><span>Projects:</span> Developed desktop applications using C# and WinForms, focusing on creating intuitive and responsive user interfaces. Leveraged object-oriented programming (OOP) principles to design modular and maintainable code, implemented event-driven programming for dynamic user interactions, and integrated back-end logic to deliver fully functional applications.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="python-desc">
-              <p class="code-title"></p>
-              <p><span>Projects:</span> Utilized Python as a versatile tool for various applications, including automation, web back-end development, machine learning, and data analysis. Automated repetitive tasks to improve efficiency and save time. Designed and implemented robust web back-end servers using frameworks like Django. Applied machine learning techniques to build predictive models and solve complex problems.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="nodejs-desc">
-              <p class="code-title"></p>
-               <p><span>Projects:</span> Built scalable and high-performance back-end systems using Node.js. Developed RESTful APIs to enable seamless communication between the server and client, integrated databases such as Firebase Database and MySQL for efficient data storage and retrieval, and implemented authentication and authorization systems to ensure security. Leveraged Node.js's asynchronous capabilities to handle real-time features and high-traffic applications efficiently.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="mysql-desc">
-              <p class="code-title"></p>
-               <p><span>Projects:</span> Utilized MySQL to design and manage relational databases, ensuring efficient data storage, retrieval, and management. Crafted complex queries to interact with large datasets, optimized database performance with indexing and query optimization, and maintained data integrity through constraints and normalization. Integrated MySQL seamlessly with back-end systems for dynamic web applications and data-driven solutions.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="firebase-desc">
-              <p class="code-title"></p>
-             <p><span>Projects:</span> Used Firebase to build scalable apps with Firestore for real-time data storage, Firebase Storage for secure file management, Firebase ML for integrating machine learning models, and Firebase Authentication for seamless and secure user authentication across multiple platforms.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="android-desc">
-              <p class="code-title"></p>
-               <p><span>Projects:</span> Developed mobile applications using Android Studio, utilizing Java and Kotlin for efficient app development. Designed responsive and user-friendly interfaces with XML, integrated various Android APIs for enhanced functionality, and implemented features like push notifications, databases, and location services. Focused on performance optimization and building apps that run smoothly across different devices and Android versions.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          <div class="git-desc">
-              <p class="code-title"></p>
-              <p><span>Projects:</span> Utilized Git for version control in collaborative software development projects. Managed code versions, tracked changes, and coordinated team workflows using Git branches and pull requests. Ensured seamless collaboration by resolving merge conflicts and maintaining a clean and efficient commit history. Integrated Git with GitHub for code hosting, review, and collaboration.</p>
-              <div class="code-icon"></div>
-          </div>
-
-          
-
-        </div>
-
-      </div>
-        <div class="hoverblock"></div>
-    </div> <!-- End Centerfold-Wrap -->
-  </div>
-
-</section>
-</section>
-
-
-	<!-- Projects -->
-<section id="Project" class="flex justify-center py-20 overflow-y-scroll">
-  <div class="w-full max-w-4xl px-4">
-    <!-- Title Section -->
-    <h1 class="text-4xl sm:text-5xl font-bold text-center mb-10">Projects</h1>
-    
-    <!-- Scrollable Grid Section: Project Boxes -->
-    <div class="overflow-auto h-3/4">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 min-w-[320px] sm:min-w-0 justify-items-center">
-        <!-- Your content here -->
-       
-
-  <div class="card min-w-[280px] max-w-full">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <strong>MC Studio</strong>
-              </div>
-            </div>
-            <div class="front">
-              <div class="img">
-                <div class="circle"></div>
-                <div class="circle" id="right"></div>
-                <div class="circle" id="bottom"></div>
-              </div>
-              <div class="front-content">
-                <small class="badge">Description</small>
-                <p class="badge">MC STUDIO’s site showcases photography services, packages, and booking options.</p>
-                <div class="description">
-                	<!-- <p>dasdsd</p> -->
-									<button id="p1" class="button" style="--clr: #808080">
-									  <span class="button__icon-wrapper">
-									    <svg
-									      viewBox="0 0 14 15"
-									      fill="none"
-									      xmlns="http://www.w3.org/2000/svg"
-									      class="button__icon-svg"
-									      width="10"
-									    >
-									      <path
-									        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-									        fill="currentColor"
-									      ></path>
-									    </svg>
-
-									    <svg
-									      viewBox="0 0 14 15"
-									      fill="none"
-									      width="10"
-									      xmlns="http://www.w3.org/2000/svg"
-									      class="button__icon-svg button__icon-svg--copy"
-									    >
-									      <path
-									        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-									        fill="currentColor"
-									      ></path>
-									    </svg>
-									  </span>
-									  Explore All
-									</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-         <!-- Project 2 -->
-        <div class="card min-w-[280px] max-w-full">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <strong>GROOT (Mobile)</strong>
-              </div>
-            </div>
-            <div class="front">
-              <div class="img">
-                <div class="circle"></div>
-                <div class="circle" id="right"></div>
-                <div class="circle" id="bottom"></div>
-              </div>
-              <div class="front-content">
-                <small class="badge">Description</small>
-                <p class="badge">GROOT is a mobile app for identifying indigenous trees, pests, and diseases, and monitoring tree health for preservation.</p>
-                <div class="description">
-                	<!-- <p>dasdsd</p> -->
-									<button id="p2" class="button" style="--clr: #808080">
-									  <span class="button__icon-wrapper">
-									    <svg
-									      viewBox="0 0 14 15"
-									      fill="none"
-									      xmlns="http://www.w3.org/2000/svg"
-									      class="button__icon-svg"
-									      width="10"
-									    >
-									      <path
-									        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-									        fill="currentColor"
-									      ></path>
-									    </svg>
-
-									    <svg
-									      viewBox="0 0 14 15"
-									      fill="none"
-									      width="10"
-									      xmlns="http://www.w3.org/2000/svg"
-									      class="button__icon-svg button__icon-svg--copy"
-									    >
-									      <path
-									        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-									        fill="currentColor"
-									      ></path>
-									    </svg>
-									  </span>
-									  Explore All
-									</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="card min-w-[280px] max-w-full">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <strong>GROOT (WEB)</strong>
-              </div>
-            </div>
-            <div class="front">
-              <div class="img">
-                <div class="circle"></div>
-                <div class="circle" id="right"></div>
-                <div class="circle" id="bottom"></div>
-              </div>
-              <div class="front-content">
-                <small class="badge">Description</small>
-
-								<p class="badge">GROOT WEBSITE centralizes GROOT mobile data for monitoring tree health, detecting pests, and improving tree care.</p>
-                <div class="description">
-                	<!-- <p>dasdsd</p> -->
-									<button id="p3" class="button" style="--clr: #808080">
-									  <span class="button__icon-wrapper">
-									    <svg
-									      viewBox="0 0 14 15"
-									      fill="none"
-									      xmlns="http://www.w3.org/2000/svg"
-									      class="button__icon-svg"
-									      width="10"
-									    >
-									      <path
-									        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-									        fill="currentColor"
-									      ></path>
-									    </svg>
-
-									    <svg
-									      viewBox="0 0 14 15"
-									      fill="none"
-									      width="10"
-									      xmlns="http://www.w3.org/2000/svg"
-									      class="button__icon-svg button__icon-svg--copy"
-									    >
-									      <path
-									        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-									        fill="currentColor"
-									      ></path>
-									    </svg>
-									  </span>
-									  Explore All
-									</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-	<!-- Contact  -->
-<section id="Contact" class="flex flex-col lg:flex-row items-center justify-center lg:space-x-16 space-y-6 lg:space-y-0 min-h-screen">
-    <!-- Text Section -->
-   <div class="w-full sm:w-1/2 sm:pr-8 mb-8 sm:mb-0">
-    <div class="ml-4 sm:ml-20">
-      <div class="mt-12 sm:mt-20 mb-10">
-        <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Let's Discuss</h2>
-        <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Your Project</h2>
-      </div>
-
-      <div class="w-full sm:w-3/4 mx-auto">
-        <!-- Email Section -->
-        <div class="flex items-center justify-between border-t-4 border-gray-900 mb-10 pt-4">
-          <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgb(44, 44, 44);">
-            <img src="images/icons/mail.svg" class="w-6 h-6" alt="Mail Icon">
-          </div>
-          <div class="w-3/4">
-            <h2 class="text-l text-gray-500">Email</h2>
-            <h2 class="text-xl sm:text-2xl font-semibold">ict1gonzalodo.cdlb@gmail.com</h2>
-          </div>
-        </div>
-
-        <!-- Phone Section -->
-        <div class="flex items-center justify-between border-t-4 border-gray-900 mb-10 pt-4">
-          <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgb(44, 44, 44);">
-            <img src="images/icons/cell.svg" class="w-6 h-6" alt="Cell Icon">
-          </div>
-          <div class="w-3/4">
-            <h2 class="text-l text-gray-500">Cellphone Number</h2>
-            <h2 class="text-xl sm:text-2xl font-semibold">+63 9** *** ****</h2>
-          </div>
-        </div>
-
-        <!-- Others Section -->
-        <div class="flex items-center justify-between border-t-4 border-gray-900 mb-10 pt-4">
+         </section>
+      </main>
+      <!-- <div id="modal-container" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" style="z-index: 101;">
+         <div class="modal-background">
+         <div class="modal w-full mx-auto p-6 md:p-8 bg-white rounded-lg shadow-lg overflow-auto pb-[56.25%] items-center justify-center" 
+            style="height: 85vh; max-height: 100vh; max-width: calc(100% - 100px); position: relative; overflow: hidden;">
          
-          <div class="w-3/4 flex flex-wrap">
-
-              <div class="card_social">
-                <a href="#" class="socialContainer containerOne">
-                  <img src="images/icons/github-mark-white.svg" class="socialSvg">
-                </a>
-              </div>
-
-              <div class="card_social">
-                <a href="#" class="socialContainer containerTwo">
-                  <img src="images/icons/linkedin.svg" class="socialSvg">
-                </a>
-                
-              </div>             
-              
-
-
-
-
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-    <!-- Image Section -->
-    <div class="flex justify-center lg:justify-start w-full lg:w-auto">
-        <img src="images/self.png" class="w-3/4 lg:w-full max-w-xs lg:max-w-sm rounded-lg">
-    </div>
-</section>
-
-
-	<!-- Achievements -->
-	<section id="Achievements" class="flex flex-col sm:flex-row justify-between py-8 overflow-y-scroll">
-  <!-- Left Section: Badges -->
-  <div class="w-full sm:w-1/2 sm:pr-8 mb-8 sm:mb-0">
-    <div class="ml-4 sm:ml-20">
-      <div class="mt-12 sm:mt-20 mb-24">
-        <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Badges &</h2>
-        <h2 class="text-4xl sm:text-6xl font-bold text-center sm:text-left">Certificates</h2>
-      </div>
-
-      <div class="w-3/4  mx-auto">
-        <h2 class="text-2xl font-semibold">Badges</h2>
-        <div class="grid grid-cols-3 gap-4">
-        	<a href="https://www.credly.com/badges/702e8572-85db-4f4b-9e56-9d2af95ed375/public_url" target="_blank"><img src="https://images.credly.com/size/340x340/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png"></a>
-
-          <a href="https://www.credly.com/badges/ddc1b594-c12b-439a-ab28-17e48996d9d3/public_url" target="_blank"><img src="https://images.credly.com/size/340x340/images/5bdd6a39-3e03-4444-9510-ecff80c9ce79/image.png"></a>
-
-          <a href="https://www.credly.com/badges/6e841ddb-3953-484d-8430-523790f6c2fc/public_url" target="_blank"><img src="https://images.credly.com/images/19e742ef-13be-4d26-87ed-ac8f5fd0643c/image.png"></a>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Right Section: Certificate -->
-  <div class="w-full sm:w-1/2 sm:pl-8 sm:mr-24 mb-8 sm:mb-0">
-    <div class="mt-12 sm:mt-32">
-      <h2 class="text-2xl font-semibold mb-10">Certificate</h2>
-
-      <div class="flex flex-col sm:flex-row items-center justify-between border-t-4 border-white mb-10 pt-4">
-        <div class="w-full sm:w-1/4 text-center sm:text-left">
-          <h5 class="font-semibold">August 27, 2024</h5>
-        </div>
-        <div class="w-full sm:w-2/4 text-center sm:text-left">
-          <h2 class="text-2xl sm:text-3xl font-bold">Cisco Networking Academy</h2>
-          <h2 class="text-xl sm:text-2xl font-semibold">Introduction to Cybersecurity</h2>
-        </div>
-        <div class="w-full sm:w-1/4 flex items-center justify-center mt-4 sm:mt-0">
-          <button class="w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" style="background: #FBBF24;">
-            <i class="fas fa-arrow-alt-circle-right text-2xl"></i>
-          </button>
-        </div>
-      </div>
-
-
-      <div class="flex flex-col sm:flex-row items-center justify-between border-t-4 border-white mb-10 pt-4">
-        <div class="w-full sm:w-1/4 text-center sm:text-left">
-          <h5 class="font-semibold">January 16, 2025</h5>
-        </div>
-        <div class="w-full sm:w-2/4 text-center sm:text-left">
-          <h2 class="text-2xl sm:text-3xl font-bold">Cisco Networking Academy</h2>
-          <h2 class="text-xl sm:text-2xl font-semibold">Networking Basics</h2>
-        </div>
-        <div class="w-full sm:w-1/4 flex items-center justify-center mt-4 sm:mt-0">
-          <button class="w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" style="background: #FBBF24;">
-            <i class="fas fa-arrow-alt-circle-right text-2xl"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row items-center justify-between border-t-4 border-white mb-10 pt-4">
-        <div class="w-full sm:w-1/4 text-center sm:text-left">
-          <h5 class="font-semibold">January 20, 2025</h5>
-        </div>
-        <div class="w-full sm:w-2/4 text-center sm:text-left">
-          <h2 class="text-2xl sm:text-3xl font-bold">Cisco Networking Academy</h2>
-          <h2 class="text-xl sm:text-2xl font-semibold">Computer Hardware Basics</h2>
-        </div>
-        <div class="w-full sm:w-1/4 flex items-center justify-center mt-4 sm:mt-0">
-          <button class="w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300" style="background: #FBBF24;">
-            <i class="fas fa-arrow-alt-circle-right text-2xl"></i>
-          </button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-</main>
-
-
-<div id="modal-container" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" style="z-index: 101;">
-  <div class="modal-background">
-<div class="modal w-full mx-auto p-6 md:p-8 bg-white rounded-lg shadow-lg overflow-auto pb-[56.25%] items-center justify-center" 
-     style="height: 85vh; max-height: 100vh; max-width: calc(100% - 100px); position: relative; overflow: hidden;">
-  
-  <!-- Iframe for the portfolio -->
-  <iframe id="portfolio" 
-          src="project1.html" 
-          class="w-full h-full absolute inset-0 mt-10" 
-          style="border: none;">
-  </iframe>
-
-  <!-- Floating Close Button -->
-  <button id="close-btn" class="absolute top-2 right-2 bg-gray-500 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none">
-    ×
-  </button>
-</div>
-
-  </div>
-</div>
-
-
-
-
-
-
-          <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-          <script type="text/javascript">
-    $('.button').click(function(){
-    	 var iframe = $('#portfolio');
-  console.log(iframe.attr)
-  var buttonId = $(this).attr('id');
-  $('#modal-container').removeAttr('class').addClass("one");
-  console.log(buttonId)
-
-  switch(buttonId){
-  	case 'p1':
-  		iframe.attr('src', 'project1.html');
-  		break;
-		case 'p2':
-			iframe.attr('src','project2.html');
-			break;
-		case 'p3':
-			iframe.attr('src','project3.html')
-			break;
-  }
-
-
-
-
-
-  $('body').addClass('modal-active');
-})
-
-$('#close-btn').click(function(){
-	console.log('dasdsd')
-  $('#modal-container').addClass('out');
-  $('body').removeClass('modal-active');
-});
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js'></script>
-<script  src="js/script.js"></script>
-</body>
+         <iframe id="portfolio" 
+                 src="project1.html" 
+                 class="w-full h-full absolute inset-0 mt-10" 
+                 style="border: none;">
+         </iframe>
+         
+         <button id="close-btn" class="absolute top-2 right-2 bg-gray-500 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none">
+           ×
+         </button>
+         </div>
+         
+         </div>
+         </div>
+         -->
+      <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      <!--      <script type="text/javascript">
+         $('.button').click(function(){
+           var iframe = $('#portfolio');
+         console.log(iframe.attr)
+         var buttonId = $(this).attr('id');
+         $('#modal-container').removeAttr('class').addClass("one");
+         console.log(buttonId)
+         
+         switch(buttonId){
+         case 'p1':
+         iframe.attr('src', 'project1.html');
+         break;
+         case 'p2':
+         iframe.attr('src','project2.html');
+         break;
+         case 'p3':
+         iframe.attr('src','project3.html')
+         break;
+         }
+         
+         
+         
+         
+         
+         $('body').addClass('modal-active');
+         })
+         
+         $('#close-btn').click(function(){
+         console.log('dasdsd')
+         $('#modal-container').addClass('out');
+         $('body').removeClass('modal-active');
+         });
+         </script> -->
+      <script type="text/javascript">
+         // Set up an initial slide index for each carousel
+         let currentSlide = 0;
+         
+         function moveSlide(direction, carouselId) {
+           const carousel = document.querySelector(`#${carouselId} .carousel-images`);
+           const images = carousel.querySelectorAll('img');
+           const totalSlides = images.length;
+         
+           // Hide all images
+           images.forEach(img => img.style.display = 'none');
+         
+           // Update the current slide index
+           currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+         
+           // Show the current slide
+           images[currentSlide].style.display = 'block';
+         }
+         
+         // Set all carousels to show the first image on load
+         window.onload = function() {
+           document.querySelectorAll('.carousel-images').forEach(carousel => {
+             const images = carousel.querySelectorAll('img');
+             images.forEach((img, index) => {
+               if (index === 0) {
+                 img.style.display = 'block';
+               } else {
+                 img.style.display = 'none';
+               }
+             });
+           });
+         };
+         
+         
+      </script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js'></script>
+      <script  src="js/script.js"></script>
+      <script src="slider/js/classie.js"></script>
+      <script src="slider/js/dynamics.min.js"></script>
+      <script src="slider/js/main.js"></script>
+   </body>
 </html>
